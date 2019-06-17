@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Main{
+    
+    public static double area(int n, double s){
+        double area;
+        area = (n*(s*s))/(4*Math.tan(Math.PI/n));
+        return area;
+    }
+    
+    public static void main(String[] args){
+        
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        double s = sc.nextDouble();
+        System.out.print(area(n,s));
+        
+    }
+    
+    
+}

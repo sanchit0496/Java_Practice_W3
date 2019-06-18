@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class Main
+{
+
+  public static void main (String[]args)
+  {
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("1st Input: ");
+        int firstInput = input.nextInt();
+        System.out.println("2nd Input: ");
+        int secondInput = input.nextInt();
+        System.out.println("3rd Input: ");
+        int thirdInput = input.nextInt();
+        
+        if (firstInput+secondInput == thirdInput){
+        System.out.println("The result is: " + true);
+        } else {
+        System.out.println("The result is: " + false);
+        
+        }
+  }
+
+
+
+}

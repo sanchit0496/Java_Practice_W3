@@ -1,0 +1,35 @@
+/*
+Convert seconds to hour, minute and seconds
+*/
+
+
+import java.util.*;
+
+public class Main
+{
+
+  public static void main (String[] args){
+
+        int a,b,c;
+    
+        Scanner sc = new Scanner(System.in);
+        a = sc.nextInt();
+        b = sc.nextInt();
+        c = sc.nextInt();
+        System.out.println(test(a,b,c));
+        
+    }   
+    
+    public static int test(int a,int b,int c){
+        int count = 0;
+        for(int i = a; i<=b; i++){
+            if(i%c == 0){
+                count++;
+            }
+            
+        }
+        return count;
+    }
+    
+    
+}

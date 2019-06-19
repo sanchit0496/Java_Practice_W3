@@ -1,0 +1,41 @@
+/*
+Accepts an integer and count the factors of the number
+*/
+
+
+import java.util.*;
+
+public class Main
+{
+
+  public static void main (String[] args){
+
+        int n;
+        double m;
+    
+        Scanner sc = new Scanner(System.in);
+        n = sc.nextInt();
+        System.out.println(test(n));
+        
+    }   
+    
+    public static int test(int n){
+    
+        int ctr = 0;
+		for(int i=1; i<=(int)Math.sqrt(n); i++)
+	    {
+	        if(n%i==0 && i*i!=n)
+	        {
+	            ctr+=2;
+	        } 
+	        else if (i*i==n) 
+	        {
+	            ctr++;
+	        }
+	    }
+	        return ctr;
+	}
+        
+    
+    
+}

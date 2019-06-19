@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class Main{
+
+    public static void main(String[] args){
+        String line;
+        Scanner sc = new Scanner(System.in);
+        
+        line = sc.nextLine();
+        Scanner lineread = new Scanner(line); //scans the input line 
+        String newline = "";
+        
+        while(lineread.hasNext()){ //run the loop till the line has a next token
+        
+            String word = lineread.next();
+            newline = newline +  Character.toUpperCase(word.charAt(0)) + word.substring(1) + " ";
+            //uppercase first character and add the rest string using the substring() method
+            
+        }
+        
+     System.out.println(newline);   
+
+    }
+    
+}

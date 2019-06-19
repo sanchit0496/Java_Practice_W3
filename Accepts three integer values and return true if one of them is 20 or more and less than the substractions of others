@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class Exercise {
+
+public static void main(String[] args) {
+Scanner in = new Scanner(System.in);
+System.out.print("Input the first string : ");
+int a = in.nextInt();
+
+System.out.print("Input the first string : ");
+int b = in.nextInt();
+
+System.out.print("Input the first string : ");
+int c = in.nextInt();
+
+System.out.println(type(a, b, c));
+}
+
+public static boolean type(int q, int w, int e) {
+if ((q - w) == 20 || (w - e) == 20 || (q - e) == 20) {
+return true;
+}
+return false;
+}
+}

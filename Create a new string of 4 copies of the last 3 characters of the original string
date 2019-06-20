@@ -1,0 +1,20 @@
+/*Insert "Tutorial" in the middle of "Python 3.0", so result will be Python Tutorial 3.0*/
+
+
+import java.util.*;
+
+public class Main{
+    
+    public static void main(String[] args){
+        
+        String a = "Python 3.0";
+        String b = "";
+        
+        b = a.substring(7,10);
+        System.out.println(b+b+b+b);
+               
+    }
+    
+    
+    
+}

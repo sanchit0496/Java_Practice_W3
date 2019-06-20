@@ -1,0 +1,29 @@
+/*Extract the first half of a string of even length*/
+
+
+import java.util.*;
+
+public class Main{
+    
+    public static void main(String[] args){
+        
+        String a;
+        Scanner sc = new Scanner(System.in);
+        a = sc.nextLine();
+        int len = a.length();
+        
+        if(len>=3){
+            System.out.println(a.substring(0,3));
+        }else if(len == 2){
+            System.out.println("#" + a.substring(0,2));
+        }else if(len == 1){
+            System.out.println("##" + a.substring(0,1));
+        }else{
+            System.out.println("###");
+        }
+               
+    }
+    
+    
+    
+}

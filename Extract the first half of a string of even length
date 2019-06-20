@@ -1,0 +1,20 @@
+/*Extract the first half of a string of even length*/
+
+
+import java.util.*;
+
+public class Main{
+    
+    public static void main(String[] args){
+        
+        String a = "Python";
+        int reql = (a.length() / 2); 
+        
+        String b = a.substring(0,reql);
+        System.out.println(b);
+               
+    }
+    
+    
+    
+}

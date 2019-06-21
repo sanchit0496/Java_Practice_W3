@@ -1,0 +1,43 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[])
+    {
+        
+        String[] name = {"zero","one","two","three","four","five","six","seven","eight","nine"};
+        
+        int m, n, sum = 0;
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter the number:");
+        m = s.nextInt();
+        while(m > 0)
+        {
+            n = m % 10;
+            sum = sum + n;
+            m = m / 10;
+        }
+        System.out.println("Sum of Digits:"+sum);
+        
+       
+        int x; int y; int z;
+		String[] number = {"zero","one","two","three","four","five","six","seven","eight","nine"};
+
+		if (sum < 10) {
+			System.out.println(number[sum]);
+		}
+		else if (sum < 100) {
+			x = sum / 10;
+			y = sum - x *10;
+			System.out.println("In English: "+number[x] + " " + number[y]);
+		}
+		else {
+			x = sum / 100;
+			y = (sum - x * 100) / 10;
+			z = sum - x * 100 - y * 10;
+			System.out.println("In English: "+number[x] + " " + number[y] + " " + number[z]);
+		}
+       
+        
+       
+    }
+}

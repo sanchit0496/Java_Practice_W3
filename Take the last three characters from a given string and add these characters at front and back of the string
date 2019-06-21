@@ -1,0 +1,20 @@
+/*Take the last three characters from a given string and add these characters at front and back of the string*/
+
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		
+		String s;
+		Scanner sc = new Scanner(System.in);
+		s = sc.nextLine();
+		int n = s.length();
+		String s1 = s.substring(n-3,n);
+		
+		String s2 = s1 + s + s1;
+		
+		System.out.println(s);
+	    System.out.println(s2);
+	}
+}

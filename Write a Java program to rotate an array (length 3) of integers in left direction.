@@ -1,0 +1,23 @@
+/*Write a Java program to rotate an array (length 3) of integers in left direction.*/
+
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		
+		int len;
+		Scanner sc = new Scanner(System.in);
+		int x,y,z;
+		x = sc.nextInt();
+		y = sc.nextInt();
+		z = sc.nextInt();
+		
+		
+		
+		int[] arr = {x,y,z};
+		int[] newarr = {y,z,x};
+		System.out.println(Arrays.toString(newarr));
+		
+	}
+}

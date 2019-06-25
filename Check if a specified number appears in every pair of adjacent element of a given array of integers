@@ -1,0 +1,43 @@
+/*Check if a specified number appears in every pair of adjacent element of a given array of integers*/
+
+import java.util.*;
+import java.io.*;
+
+public class Main
+{
+
+	public static void main(String[] args) {
+
+    int n;
+    Scanner sc = new Scanner(System.in);
+    n = sc.nextInt();
+    int arr[] = new int[n];
+    
+    for(int i = 0; i<n; i++){
+        arr[i] = sc.nextInt();
+    }
+    
+    System.out.println(Arrays.toString(arr));
+
+    int s = sc.nextInt();
+    
+    int result = 0;
+    
+    for(int i = 0; i < n - 1; i++) {
+        if(arr[i] != s && arr[i + 1] != s)
+		{
+            result = 1;	
+		}        
+    } 
+    
+    if(result==0){
+     	 System.out.printf("True");	         
+	  }else{
+     	 System.out.printf("False");	         
+	  }	
+	
+	 
+
+	    
+	}
+}

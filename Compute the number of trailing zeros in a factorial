@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+public static void main(String[] args){
+Scanner in = new Scanner(System.in);
+System.out.println("INPUT NUMBER");
+int n = in.nextInt();
+int m = n;
+int count = 0;
+
+for(int i = n-1; i > 0; i--){
+m = m * i;
+}
+
+System.out.println(m);
+while(m % 10 == 0){
+count++;
+m /= 10;
+}
+
+System.out.println(count);
+}
+}

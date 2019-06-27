@@ -1,0 +1,19 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		
+		int n;
+		Scanner sc = new Scanner(System.in);
+		n = sc.nextInt();
+		
+		int days = n / 1440;
+		int year = days / 365;
+		int rem = days % 365;
+		
+		System.out.println(year);
+		System.out.println(rem);
+		
+	}
+}

@@ -1,0 +1,23 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		
+		int n;
+		Scanner sc = new Scanner(System.in);
+		n = sc.nextInt();
+		String input = Integer.toString(n);
+		
+		int a = input.length();
+	
+		
+		while(a > 0){
+		   int m = n % 10;
+		   n = n / 10;
+		   System.out.print(m + " ");
+		   a--;
+		}
+		
+	}
+}
